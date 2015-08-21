@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/front"
+            android:checked="true"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Front" />
+        <item
+            android:id="@+id/funny"
+            android:icon="@drawable/ic_tag_faces_black_24dp"
+            android:title="Funny" />
+        <item
+            android:id="@+id/sports"
+            android:icon="@drawable/football"
+            android:title="Sports" />
+        <item
+            android:id="@+id/gaming"
+            android:icon="@drawable/gamepad_variant"
+            android:title="Gaming" />
+        <item
+            android:id="@+id/pics"
+            android:icon="@drawable/camera"
+            android:title="Pics" />
+        <item
+            android:id="@+id/music"
+            android:icon="@drawable/ic_library_music_black_24dp"
+            android:title="Music" />
+        <item
+            android:id="@+id/news"
+            android:icon="@drawable/newspaper"
+            android:title="News" />
+        <item
+            android:id="@+id/aww"
+            android:icon="@drawable/emoticon_tongue"
+            android:title="Aww" />
+        <item
+            android:id="@+id/askreddit"
+            android:icon="@drawable/ic_question_answer_black_24dp"
+            android:title="AskReddit" />
+        <item
+            android:id="@+id/more"
+            android:icon="@drawable/ic_more_black_24dp"
+            android:title="More" />
+    </group>
+
+</menu>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="2dp">
+
+    <!--
+    uncomment the below xml code for card view.
+    also delete the background attribute in the RelativeLayout
+    -->
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector">
+
+
+            <!-- <ImageView -->
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/thumbnail"
+                android:padding="2dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_reddit" />
+
+            <TextView
+                android:id="@+id/url"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_toEndOf="@+id/thumbnail"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:paddingLeft="5dp"
+                android:text="URL"
+                android:textSize="12dp"
+                android:maxLines="1"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/subreddit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/thumbnail"
+                android:layout_toEndOf="@+id/thumbnail"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:paddingLeft="5dp"
+                android:textSize="12dp"
+                android:text="subreddit"
+                android:textColor="@color/accentColor" />
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/subreddit"
+                android:layout_alignParentEnd="true"
+                android:textSize="12dp"
+                android:layout_alignParentRight="true"
+                android:text="author"
+                android:textColor="@color/grayColor" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/thumbnail"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:maxLines="2"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:text="Hello World"
+                android:textSize="15dp"
+                android:textColor="@color/darkGrayColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/subreddit"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#95212121"
+                android:textColor="#fff"
+                android:gravity="center_horizontal"
+                android:padding="2dp"
+                android:text="Score"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <!-- un-comment for card view -->
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+
